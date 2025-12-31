@@ -81,4 +81,15 @@ const user = {
 
 // Access properties
 console.log(user.name); // "Kenon"
-console.log(user["age"]); // 25
+console.log(user["age"]); //  25
+
+// Checking Data Types
+// Use typeof to check what type a value is:
+
+console.log(typeof "Hello"); //"String"
+console.log(typeof 42);  // "Number"
+console.log(typeof true); // "Boolean"
+console.log(typeof undefined); //"undefined"
+console.log(typeof null); //"object" (this is a js bug!)
+console.log(typeof [1, 2, 3]); //"object"
+console.log(typeof {a: 1}); //"object"
