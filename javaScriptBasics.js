@@ -43,3 +43,42 @@ console.log(10 - 5); // 5 (substraction)
 console.log(10 * 5); // 50 (multiplication)
 console.log(10 / 5); // 2 (division)
 console.log(10 % 3); // 1 (remainder/modulo)
+
+// C. Boolean (True/False)
+
+const isLoggedIn = true;
+const hasPermission = false;
+
+// Used in conditions 
+if (isLoggedIn){
+    console.log("Welcome back!");
+}
+
+// D. Undefined(No value assigned)
+let username;
+console.log(username); // undefined
+
+// E. Null(Intentionally empty)
+let selectedProduct = null; // Nothing selected yet
+
+// F. Array(List of items)
+const fruits = ["apple", "banana", "orange"];
+const numbers = [1, 2, 3, 4, 5];
+const mixed = ["hello", 42, true];
+
+// Access by index (starts at 0)
+console.log(fruits[0]); // "apple"
+console.log(fruits[1]); // "banana"
+console.log(fruits[2]); // "orange"
+
+// G. Object (Collection of properties)
+const user = {
+    name: "Kenon",
+    age: 25,
+    isAdmin: true,
+    email: "kenzo@example.com"
+};
+
+// Access properties
+console.log(user.name); // "Kenon"
+console.log(user["age"]); // 25
