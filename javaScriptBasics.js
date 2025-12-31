@@ -93,3 +93,16 @@ console.log(typeof undefined); //"undefined"
 console.log(typeof null); //"object" (this is a js bug!)
 console.log(typeof [1, 2, 3]); //"object"
 console.log(typeof {a: 1}); //"object"
+
+// String Concatenation(Joining Strings)
+// Method 1: Using +
+const userName = "Kenon";
+const userLastName = "Sahirani"
+const userFullName = userName + " " + userLastName;
+console.log(userFullName); // "Kenon Sahirani"
+
+// Method2 : Template Literals (BETTER!)
+const userAge = 25;
+const userMessage = `My name is ${userName} and I am ${userAge} years old`;
+console.log(userMessage); //"My Name is Kenon and  I am 25 years old."
+
