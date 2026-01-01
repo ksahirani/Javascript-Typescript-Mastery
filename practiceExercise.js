@@ -6,9 +6,11 @@ const skills = ["Javascript/Typescript", "Express", "React", "Java", "Springboot
 const info = {
         name: "Kenon Sahirani",
         country: "Philippines",
-        frontend: "HTML, CSS, Tailwind",
-        backend: "Java, C#, Javascript, Ruby, Python",
-        database: "postgresql, mysql, mongodb"
+        frontend: ["HTML, CSS, Tailwind"], // Array
+        backend: ["Java, C#, Javascript, Ruby, Python"], // Array 
+        database: ["postgresql, mysql, mongodb"] // Array
+        // Make a small improvement: in info because info has skills as strings,
+        // Use arrays for multiple values, to make it easier to loop or count skills later!
 }
 
 console.log("Name:", fullName);
