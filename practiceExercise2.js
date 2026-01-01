@@ -6,3 +6,4 @@ console.log(`${numberOne} + ${numberTwo} = ${numberOne + numberTwo}`);
 console.log(`${numberOne} - ${numberTwo} = ${numberOne - numberTwo}`);
 console.log(`${numberOne} * ${numberTwo} = ${numberOne * numberTwo}`);
 console.log(`${numberOne} / ${numberTwo} = ${numberOne / numberTwo}`);
+console.log(`${numberOne} % ${numberTwo} = ${numberOne % numberTwo}`);
