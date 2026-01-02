@@ -90,3 +90,27 @@ console.log(isGuest || isMember); //false (both are false)
 3. false - true - true
 4. false - false - false
 */
+
+// NOT Operator (!)
+// Reverses the boolean
+
+const isLoggedIn = true;
+const isBlocked = false;
+
+console.log(!isLoggedIn); //false (reverses true)
+console.log(!isBlocked); //true (reverses false)
+
+// Check if user is NOT logged in
+if (!isLoggedIn) {
+    console.log("Please log in");
+}
+
+// Combining Multiple Operators
+
+const age4 = 25;
+const hasLicense = true;
+const isSuspended = false;
+
+// Can drive? (18+, has license, NOT suspended)
+const canDrive = age >= 18 && hasLicense && !isSuspended;
+console.log(canDrive); //true
