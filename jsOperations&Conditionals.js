@@ -30,4 +30,42 @@ console.log(price > 200); // true
 console.log(stock <= 0); //true
 console.log(age >= 18); //true (adult check)
 
+// Important: === vs ==
 
+// === - (Strict equality) - checks value and type use this
+console.log(5 === 5); //true
+console.log(5 === "5"); //false (number vs string)
+
+// == - (Loose equality) - Only checks value avoid this
+console.log(5 == 5); //true
+console.log(5 == "5") // true (converts string to number)
+
+// Rule: Always use === and !==
+
+// 2. Logical Operators
+// Combine multiple conditions together
+/* 
+1. AND - (&&) - Both must be true
+2. OR - (||) - At least one must be true
+3. NOT - (!) - Reverses true/false
+*/
+
+// AND Operator (&&)
+// Both conditions must be true:
+
+const age2 = 25;
+const hasID = true;
+
+// Can enter bar? (Must be 18+ AND have ID)
+console.log(age2 >= 18 && hasID); //true
+
+const age3 = 16;
+console.log(age3 >= 18 && hasID); //false (age is under 18)
+
+// Truth table for &&:
+/* 
+1. true - true - true
+2. true - false - false
+3. false - true - false
+4. false - false - false
+*/
