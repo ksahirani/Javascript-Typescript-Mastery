@@ -69,3 +69,24 @@ console.log(age3 >= 18 && hasID); //false (age is under 18)
 3. false - true - false
 4. false - false - false
 */
+
+// OR Operator (||)
+// At least one condition must be true:
+
+const isAdmin = false;
+const isOwner = true;
+
+// Can edit? (Must be an admin OR owner)
+console.log(isAdmin || isOwner); //true
+
+const isGuest = false;
+const isMember = false;
+console.log(isGuest || isMember); //false (both are false)
+
+// Truth table for ||:
+/* 
+1. true - true - true
+2. true - false - true
+3. false - true - true
+4. false - false - false
+*/
