@@ -60,7 +60,7 @@ const hasID = true;
 console.log(age2 >= 18 && hasID); //true
 
 const age3 = 16;
-console.log(age3 >= 18 && hasID); //false (age is under 18)
+console.log(age2 >= 18 && hasID); //false (age is under 18)
 
 // Truth table for &&:
 /* 
@@ -112,5 +112,40 @@ const hasLicense = true;
 const isSuspended = false;
 
 // Can drive? (18+, has license, NOT suspended)
-const canDrive = age >= 18 && hasLicense && !isSuspended;
+const canDrive = age4 >= 18 && hasLicense && !isSuspended;
 console.log(canDrive); //true
+
+// 3. If / Else Statements
+// - Make decisions in your code
+
+// Basic IF:
+let age5 = 20;
+
+if (age5 >= 18) {
+    console.log("You are an adult!");
+}
+
+// IF / Else:
+age5 = 15;
+
+if (age5 >= 18){
+    console.log("You are an adult!")
+} else {
+    console.log("You are a minor!");
+}
+
+// If / Else If / Else:
+
+const score = 85;
+
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+} else if (score >= 70) {
+    console.log("Grade: C");
+} else if (score >= 60) {
+    console.log("Grade: D");
+} else {
+    console.log("Grade: F");
+}
