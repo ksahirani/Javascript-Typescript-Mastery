@@ -197,3 +197,20 @@ if (isLoggedIn1) {
     console.log("Please log");
 }
 
+// Ternary Operator (Shortcut condition)
+// A shorter way to write simple if/else
+
+// Traditional if / else
+const age6 = 20;
+let status;
+
+if (age6 >= 18) {
+    status = "Adult";
+} else {
+    status = "Minor";
+}
+
+// Same thing with ternary
+const status1 = age6 >= 18 ? "Adult" : "Minor";
+console.log(status1); //Adult
+
