@@ -271,3 +271,29 @@ switch (day) {
 
 console.log(dayName); //Wednesday
 
+// Real World Example: Order Status
+const orderStatus = "shipped";
+let message;
+
+switch (orderStatus) {
+    case "pending":
+        message = "Your order is being processed";
+        break;
+    case "confirmed":
+        message = "Your order is confirmed";
+        break;
+    case "shipped":
+        message = "Your order is on the way";
+        break;
+    case "delivered":
+        message = "Your order has been delivered";
+        break;
+    case "cancelled":
+        message = "Your order was cancelled";
+        break;
+    default:
+        message = "Unknown status";
+}
+console.log(message); //"Your order is on the way"
+
+// Note: Don't forget break! Without it, code continues to next 
