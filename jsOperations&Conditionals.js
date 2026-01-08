@@ -149,3 +149,35 @@ if (score >= 90) {
 } else {
     console.log("Grade: F");
 }
+
+// Real world Example : Shopping Cart
+
+const cartTotal = 1500;
+const isMember1 = true;
+
+let discount = 0;
+let shippingFee = 100;
+
+// Member get 10% discount
+if (isMember1) {
+    discount =  cartTotal * 0.10; // 10%
+}
+
+// Free shipping over P1000
+if(cartTotal >= 1000) {
+    shippingFee = 0;
+}
+
+const finalTotal = cartTotal - discount + shippingFee;
+
+console.log(`Subtotal: ₱${cartTotal}`);
+console.log(`Discount: ₱${discount}`);
+console.log(`Shipping: ₱${shippingFee}`);
+console.log(`Total: ₱${finalTotal}`);
+
+// Output:
+// Subtotal: ₱1500
+// Discount: ₱150
+// Shipping: ₱0
+// Total: ₱1350
+
