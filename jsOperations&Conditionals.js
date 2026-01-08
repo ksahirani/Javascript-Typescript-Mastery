@@ -181,3 +181,19 @@ console.log(`Total: ₱${finalTotal}`);
 // Shipping: ₱0
 // Total: ₱1350
 
+// Nested if Statements
+const isLoggedIn1 = true;
+const isAdmin1 = true;
+
+if (isLoggedIn1) {
+    console.log("Welcome back!");
+
+    if(isAdmin1) {
+        console.log("You have admin access");
+    } else {
+        console.log("You have user access");
+    }
+} else {
+    console.log("Please log");
+}
+
