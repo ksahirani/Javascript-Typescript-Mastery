@@ -227,3 +227,47 @@ const score1 = 75;
 const result  = score >= 60 ? "Passed" : "Failed";
 console.log(result); // Passed
 
+// Ternary in Template Literals:
+
+const product = {
+    name: "Notebook",
+    stock: 0
+};
+
+console.log(`${product.name} - ${product.stock > 0 ? "Available" : "Sold Out"}`);
+// Output: "Notebook - Sold Out"
+
+// 5. Switch Statement
+// Best for checking one variable against many values:
+
+const day = 3;
+let dayName;
+
+switch (day) {
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        dayName = "Invalid day";
+}
+
+console.log(dayName); //Wednesday
+
