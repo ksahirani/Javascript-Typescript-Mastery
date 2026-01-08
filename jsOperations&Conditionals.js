@@ -214,3 +214,16 @@ if (age6 >= 18) {
 const status1 = age6 >= 18 ? "Adult" : "Minor";
 console.log(status1); //Adult
 
+// More examples of ternary operator:
+const stock1 = 5;
+const stockStatus = stock1 > 0 ? "In Stock" : "Out of Stock";
+console.log(stockStatus);
+
+const isMember2 = true;
+const discount1 = isMember2 ? 0.10 : 0;
+console.log(`Discount: ${discount * 100}%`); //Discount: 10%
+
+const score1 = 75;
+const result  = score >= 60 ? "Passed" : "Failed";
+console.log(result); // Passed
+
