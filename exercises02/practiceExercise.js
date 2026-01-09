@@ -1,3 +1,4 @@
+// Exercise 1: Age Checker
 const age = 32;
 
 if (age < 13) {
