@@ -5,7 +5,7 @@ if (age < 13) {
 } else if (age >= 13 && age <= 17) {
     console.log("Teenager");
 } else if (age >= 18 && age <= 59) {
-    console.log("Adult")
+    console.log("Adult");
 } else {
     console.log("Senior");
 }
